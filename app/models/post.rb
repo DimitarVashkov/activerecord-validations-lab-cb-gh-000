@@ -8,7 +8,7 @@ class Post < ActiveRecord::Base
   def click_bait
     result = false
     ["Won't Believe","Secret","Top","Guess"].each do |x|
-      if :title.include?(x)
+      if title.include?(x)
         result = true
       end
     end
