@@ -12,6 +12,8 @@ class Post < ActiveRecord::Base
         result = true
       end
     end
-    result
+    if !result
+       errors.add(:title, “not clickbait”)
+    end
   end
 end
