@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
       end
     end
     if !result
-       errors.add(:title, “not clickbait”)
+       errors.add(:title, “not clickbait-y”)
     end
   end
 end
